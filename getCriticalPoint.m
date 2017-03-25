@@ -87,7 +87,7 @@ for bb=1:T
             aver_Pt=0;
             pi=[0.5,0.5];
             for i=1:sample_num
-                aver_Pt=aver_Pt+pr_hmm2(Changed(i,l-2:l-1),state_transi,...
+                aver_Pt=aver_Pt+pr_hmm(Changed(i,l-2:l-1),state_transi,...
                     emission,pi)/sample_num;
             end
             prob(l-2)=prob(l-2)+aver_Pt;
